@@ -1,0 +1,53 @@
+.span3 {
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 19px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.s3 {
+  color: red;
+}
+.dropbtn {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 19px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.dropbtn:hover {
+  color: red;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: red;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #000;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 20vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0.5vw;
+}
+.dropdown-content a {
+  color: #000;
+  font-family: Kanit;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 0.5vw;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}

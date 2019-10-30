@@ -1,0 +1,38 @@
+footer{
+    
+    margin-top:65vw;
+    left:-10px;
+    bottom:-10px;
+    background-color:purple;
+    height:15vw;
+    width:110%;
+    z-index: 99999;
+    color:white;
+    padding:2vw;
+    bottom:0px;
+    
+}
+.div3{
+    float:left;
+    width:24%;
+    padding:13px;
+    font-size:1.2vw;
+    font-family: 'Raleway', sans-serif;
+    border-width: 0px;
+}
+.div4{
+    float:left;
+    width:28%;
+    padding:13px;
+    font-size:1.2vw;
+    font-family: 'Raleway', sans-serif;
+}
+.div5{
+    float:right;
+    width:30%;
+    padding:13px;
+    font-size:1.2vw;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+}
+

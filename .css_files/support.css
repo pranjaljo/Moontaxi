@@ -1,0 +1,57 @@
+
+
+body{
+    background-image: url("moonBackPlain.PNG");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.div11{
+    float:right;
+    width:45%;
+    border-width:10px;
+    height:65vw;
+}
+.div12{
+    float:left;
+    width:55%;
+    font-family: 'Modak', cursive;
+
+    border-width:10px;
+    height:65vw;
+
+}
+p{
+    font-family: Arizonia;
+
+    font-size:19px;
+    font-weight: bolder;
+    padding:2vw;
+
+}
+.img2{
+    margin-top:3vw;
+    width:90%;
+    height:auto;
+}
+.s4{
+    margin-left:5vw;
+}
+.s5{
+    margin-left:15vw;
+}
+.f22{
+    margin:2vw;
+    margin-left:5vw;
+    max-width:70%;
+}
+::placeholder{
+    font-weight: bolder;
+    font-family: 'Raleway';
+    opacity: 1;
+  }
+  button{
+      margin-left:-16vw;
+  }
