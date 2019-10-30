@@ -1,0 +1,430 @@
+<!--
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to Node and MongoDB</title>
+    </head>
+
+    <body>
+        <h1>Into to Node and MongoDB</h1>
+        <form method="post" action="/addname">
+            <label>Enter Your Name</label><br>
+            <input type="text" name="firstName" placeholder="Enter first name..." required>
+            <input type="text" name="lastName" placeholder="Enter last name..." required>
+            <input type="submit" value="Add Name">
+        </form>
+    </body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital Assingment 1</title>
+        <link href="https://fonts.googleapis.com/css?family=Arizonia|Yatra+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="icon" href="C:\Users\PranjalJo\Desktop\PDC apriori\icn_halloween_batFlyMoon-512.png" type="image/x-png">
+
+
+
+        </html>
+        <style>
+            body{
+                margin: 0px auto;
+                padding:0px auto;
+                background-color:black;
+            }
+            .h1class1{
+                font-size:3vw;
+                text-align:center;
+                font-weight: bolder;
+                font-family:'Arizonia';
+                color:blanchedalmond;
+
+            }
+            p{
+                font-size:1.2vw;
+                font-weight: bold;
+                font-family: 'work sans'
+
+            }
+            .para1{
+                text-align: center;
+                text-emphasis: none;
+            }
+
+            form{
+
+                padding:2vw;
+                font-family: 'Raleway', Helvetica, sans-serif;
+                font-size:1.3vw;
+                text-transform:inherit;
+            }
+            .div1{
+                width:73vw;
+                height:80vw;
+                background-color: white;
+                opacity: 0.7;
+                font-size:1.5vw;
+                margin:0px auto;
+                padding: 1vw;
+                font-family: 'Raleway';
+                text-emphasis: inter-word;
+
+            }
+            .div3{
+                margin:auto;
+                padding-top:7px;
+            }
+
+            .input-field {
+                height: 4vmin;
+                width: 20vmax;
+                padding: auto;
+                margin:  auto;
+                border: 1px solid #c0c0c0;
+                border-radius: 2px;
+            }
+            input.largerCheckbox{
+                width: 2.2vmin;
+                height: 2.2vmin;
+                }
+            .textinput {
+                width: 28vw;
+                height: 17vw;
+
+                 }
+            input[type="range"] {
+                max-width:400px;
+                min-width:200px;
+                width:300px;
+            }
+            .ccc{
+                    position: relative;
+                    transform: translate(-50%, -50%);
+                    width: fit-content;
+                    height:auto;
+            }
+            button{
+                display: block;
+                max-width: 300px;
+                /*margin: auto;*/
+                /*margin-right:400px;*/
+                font-family: 'Raleway', Helvetica, sans-serif;
+                width:150px;
+                height: 50px;
+                /*background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);*/
+                background: linear-gradient(45deg,white,whitesmoke,black);
+                border-style: none;
+                color:black;
+                font-size: 1.2vw;
+                letter-spacing: 2px;
+                word-spacing:2px;
+                font-weight: 600;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                padding: 0px;
+                overflow: hidden;
+                box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+                transition: all .5s;
+                text-decoration: underline;
+
+            }
+
+            button span{
+                position: absolute;
+                display: block;
+            }
+            button span:nth-child(1){
+                height: 3px;
+                width:200px;
+                top:0px;
+                left:-200px;
+                background: linear-gradient(to right, rgba(19, 17, 17, 0), black);
+                border-top-right-radius: 1px;
+                border-bottom-right-radius: 1px;
+                animation: span1 2s linear infinite;
+                animation-delay: 1s;
+            }
+
+
+            @keyframes span1{
+                0%{
+                    left:-200px
+                }
+                100%{
+                    left:200px;
+                }
+            }
+            button span:nth-child(2){
+                height: 70px;
+                width: 3px;
+                top:-70px;
+                right:0px;
+                background: linear-gradient(to right, rgba(19, 17, 17, 0), black);
+                border-bottom-left-radius: 1px;
+                border-bottom-right-radius: 1px;
+                animation: span2 2s linear infinite;
+                animation-delay: 2s;
+            }
+            @keyframes span2{
+                0%{
+                    top:-70px;
+                }
+                100%{
+                    top:70px;
+                }
+            }
+            button span:nth-child(3){
+                height:3px;
+                width:200px;
+                right:-200px;
+                bottom: 0px;
+                background: linear-gradient(to right, rgba(19, 17, 17, 0), black);
+                border-top-left-radius: 1px;
+                border-bottom-left-radius: 1px;
+                animation: span3 2s linear infinite;
+                animation-delay: 3s;
+            }
+            @keyframes span3{
+                0%{
+                    right:-200px;
+                }
+                100%{
+                    right: 200px;
+                }
+            }
+
+            button span:nth-child(4){
+                height:70px;
+                width:3px;
+                bottom:-70px;
+                left:0px;
+                background: linear-gradient(to right, rgba(19, 17, 17, 0), black);
+                border-top-right-radius: 1px;
+                border-top-left-radius: 1px;
+                animation: span4 2s linear infinite;
+                animation-delay: 4s;
+            }
+            @keyframes span4{
+                0%{
+                    bottom: -70px;
+                }
+                100%{
+                    bottom:70px;
+                }
+            }
+
+            button:hover{
+                transition: all .5s;
+                transform: rotate(-3deg) scale(1.1);
+                box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+            }
+            button:hover span{
+                animation-play-state: paused;
+            }
+            input:checked {
+                width: 50px;
+            }
+            a:link {
+                color: rgb(47, 140, 228);
+                }
+
+            a:visited {
+                color:darkblue;
+                }
+            a:active {
+                background-color: yellow;
+                }
+            input:focus {
+                background-color: yellow;
+                }
+            a:active {
+                background-color: yellow;
+                }
+            input[type="text"]:disabled {
+                background: #dddddd;
+                }
+
+        </style>
+    </head>
+
+    <body>
+        <br>
+
+        <div class="div2">
+        <h1 class="h1class1">Moon Taxi Service</h1><br><br>
+        </div>
+        <center>
+          <!--<img src="mooncab.PNG"><br><br><br>--></center>
+        <main class="div1">
+            <b><strong><div class="firstletterclass">Thank you for travelling with Moon Taxi's. Let us know how we can improve our taxi service.</div></strong></b>
+            <form id="surveyForm" form method="post" action="/addname">
+
+                <br><br><br>
+                <div class="container div3">
+                    <div class="row">
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-2">
+                        <label id="name-label" for="name">Name*: </label>
+                    </div>
+                    <div class="col-xs-2">
+                        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                </div>
+                <!--Input For Name-->
+                <div class="container div3">
+                    <div class="row">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-2">
+                            <label id="name-label" for="email">Email*: </label>
+                        </div>
+                        <div class="col-xs-2">
+                            <input autofocus type="email" name="emailId" placeholder="your email" required class="input-field">
+                        </div>
+                    </div>
+                </div>
+                <!--Input For Email-->
+                <div class="container div3">
+                    <div class="row">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-2">
+                            <label id="dob-label" for="dob">Date of Birth*:</label>
+                        </div>
+                        <div class="col-xs-2">
+                            <input autofocus type="date" required class="input-field" name="date_of_birth">
+                        </div>
+                    </div>
+                </div>
+                <div class="container div3">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <label>
+                               How Likely are you to recommend this Taxi to a Friend*:
+                            </label>
+                        </div>
+                        <div class="col-xs-2">
+                            <input type="radio" name="recommendation" value="Maybe" class="largerCheckbox">Maybe<br>
+                            <input type="radio" name="recommendation" value="Definetly" class="largerCheckbox">Definetly<br>
+                            <input type="radio" name="recommendation" value="Never" class="largerCheckbox">Never<br>
+                        </div>
+                    </div>
+
+                </div>
+                <br><br>
+                <!--sevice used -->
+                <div class="container">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <label>
+                                    How Often do you use our Taxi service
+                                </label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input list="datalist" name="Usage">
+                                <datalist id="datalist">
+                                    <option selected>Rarely</option>
+                                    <option>Always</optain>
+                                    <option>Sometimes</option>
+                                    <option>Never</option>
+                                </datalist>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+                <!--Input for Improvement
+                <div class="container div3">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <label>
+                                    Things that should be improved in the future
+                                    <em>(Check all that apply)</em>
+                            </label>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="checkbox" name="c1" value="Cheap Fares" class="largerCheckbox">Cheap Fares<br>
+                            <input type="checkbox" name="c2" value="Faster Service"class="largerCheckbox">Faster Service <br>
+                            <input type="checkbox" name="c3" value="More Coupons and Codes" class="largerCheckbox">More Coupons and Codes<br>
+                            <input type="checkbox" name="c4" value="Adapting to Self Driving Cars"class="largerCheckbox">Adapting to Self Driving Cars<br>
+                        </div>
+                    </div>
+                </div><br><br>
+                -->
+                <!--Input for Comment-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <label>
+                                Any Suggestions/Comments/Remarks :
+                            </label>
+                        </div>
+                        <div class="col-xs-5">
+                            <small><textarea class="textinput" name="comments" placeholder="write your comment here"></textarea></small>
+                        </div>
+                    </div>
+                </div><br><br>
+                <!--Input for Rate-->
+                <fieldset>
+                    <legend><strong>Please Rate Our Services</strong></legend>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3"></div>
+                                <div class="col-xs-2">
+                                    <label >Speed</label>
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="range" name="Speed" min=0 max=10 class="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3"></div>
+                                <div class="col-xs-2">
+                                    <label >Reliability</label>
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="range" name="Reliability" min=0 max=10 class="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3"></div>
+                                <div class="col-xs-2">
+                                    <label >Efficency</label>
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="range" name="Efficency" min=0 max=10 class="">
+                            </div>
+                        </div>
+                </fieldset>
+                <br><br><br>
+                <div class="ccc container">
+                    <div class=row>
+                    <div class="col-xs-7"></div>
+                    <div class="col-xs-2">
+                            <button type="submit" id="submit">Submit!!
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        </button>
+                    </div>
+                </div>
+            </div>
+            Click here to go to <a href="http://localhost/moontaxi/Home2.php">Moon Taxi Homepage</a>
+            </form>
+
+        </main>
+
+        <br>
+    </body>
+</html>
